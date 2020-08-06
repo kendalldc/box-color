@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import StateChange from './Components/StateChange';
 import './App.css';
+// import Counter from './Components/Counter';
 
-function App() {
+
+class App extends  React.Component {
+ state={
+   visible: true 
+ };
+
+render(){
+  const buttonText= this.state.visible ? "hide": "show";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <p>Want to see me change colors?</p>
+      {this.state.visible ? <StateChange /> : 
+      <div className='after'>After</div>}
+      <button onClick={() =>{ 
+      this.setState({ visible: !this.state.visible});
+      }}>Click Here</button>
+      
+  {/* <Counter/> */}
+</div> 
+
   );
+}
 }
 
 export default App;

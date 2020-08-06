@@ -1,38 +1,63 @@
+html{
+  background-color: rgba(99,141,50);
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 1px solid blue;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+
 }
 
-.App-link {
-  color: #61dafb;
+.stateChange{
+  align-items: center;
+}
+.before{
+  
+  background-color:rgb(194, 165, 102); 
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+ color: pink;
+ font-size: 70px;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+  width: 400px;
+  height: 400px; 
+}
+.after{
+  width: 400px;
+  height: 400px; 
+  background-color:pink; 
+text-align: center;
+color: rgb(194, 165, 102);
+font-family: 'Bebas Neue', cursive;
+font-size: 70px;
+ display: flex;
+ align-items: center;
+left: 50%;
+border:3px solid  black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+  border: double  rgb(138, 196, 72);
+  background-color: rgba(99,141,50);
+  font-family: 'Bebas Neue', cursive;
+  color:pink;
+  font-size: 15px;
 }
+
+
+p{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  color: rgb(194, 165, 102);
+}
+
+
+
